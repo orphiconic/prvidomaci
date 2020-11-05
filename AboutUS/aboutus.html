@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+<style>
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}     
+header{
+        background-color:#63cefa;
+        color:white;
+        padding:8%;
+    } 
+section {
+    padding: 8% 0;
+}
+    h1{
+       font-size: 200%; 
+       letter-spacing: 1px;
+    }
+  h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 2%;
+    letter-spacing: 1px;
+    color: #313131;
+}
+
+    img{
+        width: 20%;
+        height: auto;
+        border-radius: 50%;
+        border: 3pt solid #57ccfc;
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    cite{
+        padding: 2%;
+        color: #bdbdbd;
+    }
+    blockquote{
+        text-align: center;
+        width: 50%;
+        letter-spacing: 0.1rem;
+        line-height: 1.5rem;
+        color: #4e4e4e;
+    }
+    text{
+        background-color: red;
+    }
+footer {
+    background-color: #393939;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.icons{
+color: #bdbdbd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo-facebook:hover{
+        color: #3b5998;
+    }
+.logo-twitter:hover{
+    color: #00aced;
+    }
+.logo-google:hover{
+    color:#dd4b39;
+    }
+.logo-instagram:hover{
+     color: #517fa4;
+    }    
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1.2rem;
+}
+    .date{
+        font-size: 1rem;
+    }
+
+</style>
+</head>
+<body>
+    <header><h1>About us</h1></header>
+<section>
+   
+    <h2>Anja Stamatović</h2>
+  <div class="flex">
+<img src="profilepic.jpg" alt="Anja"> 
+</div>
+<div class="flex">
+<cite>software engineer</cite>
+</div>
+<div class="text flex">
+    <blockquote> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+</div>
+</section>
+<footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+    
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon name="logo-facebook" class="icons logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter" class="icons logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-google" class="icons logo-google"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram" class="icons logo-instagram"></ion-icon></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                  Struck up a conversation with a spider today at home while dusting.
+Nice guy. He's a web designer
+                </p>
+                <p class="date">
+                   Podgorica, November 2020.
+                </p>
+            </div>
+        </footer>
+ <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>       
+</body>
+</html>

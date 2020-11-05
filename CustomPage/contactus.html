@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+ <title>Contact US</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}   
+    .row {
+    max-width: 1140px;
+    margin: 0 auto; 
+    padding:1%;
+}
+    .col{
+        padding:0.5%;
+    }
+    header{
+        background-color:#63cefa;
+        color:white;
+        padding:8%;
+    }
+section {
+    padding: 8% 0;
+}
+    h1{
+       font-size: 200%; 
+       letter-spacing: 1px;
+    }
+  h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 2%;
+    letter-spacing: 1px;
+}
+ h2:after {
+    display: block;
+    height: 2px;
+    background-color: #57ccfc;
+    content: " ";
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 2%;
+}  
+ .contact-form {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 1.2%;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+    
+*:focus {outline: none;}
+    .flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        font-size: 1.1rem;
+        padding-top: 1%;
+        word-spacing: inherit;
+        text-align: center;
+        line-height: 1.6;
+        color:#191919;
+        word-spacing: 0.2rem;
+    }
+    .section-form{
+        background-color: #f2f2f2;
+    } 
+.btn{
+
+  background-color: #57ccfc;
+  color: white;
+  font-size: 16px;
+  padding: 10px 26px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #4eb7e2;
+}
+    select, option, label{
+        letter-spacing: 0.1rem;
+    }
+   label{
+        font-size: 1.1rem;
+    }
+</style>
+</head>
+<body>
+<header><h1>Contact us</h1></header>
+<section >
+    <h2>EMAIL SUPPORT</h2>
+    <p class="flex">
+Please email us your questions regarding our products.<br>
+Welcome to Bazar Customer Service. Please fill in your details below and Bazar will use the information provided for customer service purposes. <br>Please note that Bazar values and respects your privacy and will only use your data for services purposes and will not share it with third parties. <br>Please read the Bazar Privacy Statement for more information. 
+</p>
+</section>
+<section class="section-form">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked> Yes, please
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!" class="btn">
+                        </div>
+                    </div>
+                    
+                </form>
+                
+            </div>
+        </section>
+</body>
+</html>
